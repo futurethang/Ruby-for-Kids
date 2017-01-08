@@ -1,0 +1,61 @@
+Ideas for another adventure game.
+
+I could do a range of rooms or geographic locations
+
+I could include actions for moving searching fighting
+
+I could insert variables that change into each action decision
+
+I could make the game success be based on accumulating treasure, need x amount to escape, etc
+
+More ways to end game or win it
+
+make a back-pack for item acquisition. Stored as an array
+
+the items could be methods that affect specific scenarios?
+
+
+What would be a fun thing to play? If I were plying this game, what would I want to be able to do?
+
+Assuming random rooms and monsters as a rule (no revisiting specifics past the original encounter)
+
+Display could be improved to increase readability
+
+weapon choice vs creature type (sword no good on flying creature for example)
+weapons have limited uses, -1 each time until it breaks
+creatures have different strengths/deficiencies
+some creatures heal ()
+some items heal (if healing_properties?)
+
+What would make a game unique? What do you build or achieve? the environment has no
+linear goal, but you could collect items that total to a game exit.
+Game items appear randomly but only once (unless obstacle/healing)
+rather make it 2 item types, artifacts and obstacle/healing
+
+one action is a back pack
+
+outline:
+
+game loop:
+  describe room
+  action prompt
+    search, move, backpack, fight, note
+  conditional situation
+  win/lose assess
+  repeat
+
+
+  This cold be done with land types, like Catan, each has it's own resources that
+  you can use in various individual and combined ways.
+  "You are in a #{land type}, #{weather condition}, #{ominous/mysterious quality}. #{dangerlevel}"
+  if danger level > 0 increasing likelihood of monsters.
+
+  number_of_lands_explored  = 1
+  treasure_count            = 0
+  backpack                  = []
+  health                    = 5
+  escaped                   = false
+  monster                   = false
+  current_land              = create_land
+
+  
